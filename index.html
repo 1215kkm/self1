@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인소개사이트</title>
+    <link rel="stylesheet" href="css/self.css?version=20220824">
+
+    <meta property="og:title" content="개인소개사이트">
+    <meta property="og:image" content="images/mobile.png">
+    <!-- 최소 200x200 -->
+    <!-- 고화질 1200x630 -->
+    <meta property="og:description" content="제가 사회로의 첫걸음을 위해 요즘 만든 개인소개사이트입니다">
+</head>
+<body>
+    <header>
+        <h1><img src="images/logo.png" alt="" title="로고"></h1>
+        <ul class="gnb">
+            <li><a href="#section1">제가</a></li>
+            <li><a href="#section2">요즘</a></li>
+            <li><a href="#section3">만든건</a></li>
+            <li><a href="#section4">어떤가요?</a></li>
+        </ul>
+    </header>
+    <section id="section1">
+        <article>
+            <div class="box">
+                <h2>나</h2>
+                <div class="text">
+                    <strong>갈땐 떳떳하게 가고 싶은 사람</strong>
+                    <em>ENFP-A</em>
+                    <p>창의적이고 재기발랄한 성격, 넘치는 열정으로 사람들과 즐겁게 잘 어울림</p>
+                </div>
+                <figure>
+                    <img src="images/enfp.svg" alt="">
+                </figure>
+            </div>
+        </article>
+    </section>
+    <section id="section2">
+        <article>
+            <div class="box">
+                <figure>
+                    <img src="images/main2_1.png" alt="">
+                </figure>
+                <div class="text">
+                    <strong>는 시간에 하는 GAME</strong>
+                    <em>팟지에 혼자 불타고 킬딜금인데도 욕먹는 정크렛 유저</em>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="section3">
+        <article>
+            <div class="text">의뢰자들도 마음들어한 작업물모음</div>
+            <a href="#none" class="btn_show">CLICK</a>
+        </article>
+
+        <ul class="gallery">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+
+        <button class="btn_close"></button>
+    </section>
+    <section id="section4">
+        <article>
+            <iframe src="http://class10.dothome.co.kr/qna"></iframe>
+        </article>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $('.btn_show').click(function(){
+            $('.gallery').fadeIn();
+            $('.btn_close').fadeIn();
+            $('#section3 article').fadeOut();
+        });
+
+        $('.btn_close').click(function(){
+            $('.gallery').fadeOut();
+            $('.btn_close').fadeOut();
+            $('#section3 article').fadeIn();
+        })
+
+        $('.gnb li:nth-child(1)').click(function(){
+            $('.gnb li:nth-child(1) a').css('color','red');
+            $('.gnb li:nth-child(2) a').css('color','white');
+            $('.gnb li:nth-child(3) a').css('color','white');
+            $('.gnb li:nth-child(4) a').css('color','white');
+        })
+        $('.gnb li:nth-child(2)').click(function(){
+            $('.gnb li:nth-child(1) a').css('color','white');
+            $('.gnb li:nth-child(2) a').css('color','red');
+            $('.gnb li:nth-child(3) a').css('color','white');
+            $('.gnb li:nth-child(4) a').css('color','white');
+        })
+    </script>
+</body>
+</html>

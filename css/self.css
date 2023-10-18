@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url('font.css');
+@import url('reset.css');
+
+html {scroll-behavior: smooth;}
+
+header {width: 1200px; height: 80px; position: fixed; top:0; left: 50%; transform: translateX(-50%); z-index: 7;}
+
+
+header h1 {width: 90px; height: 90px;position: absolute; left: 50%; top:0; transform: translateX(-50%); text-align: center; padding-top: 10px; box-sizing: border-box;}
+header .gnb {text-align: center; font-size: 0;}
+header .gnb li {width: 200px; height: 80px; line-height: 80px; text-align: center; display: inline-block; font-size: 22px;}
+header .gnb li:nth-child(2) {margin-right: 200px;}
+header .gnb li a {display: block; color: #fff;}
+
+
+
+
+section {width: 100%; height: 100vh; position: relative;}
+#section1 {background: url('../images/bg1.jpg') center; background-size: cover;}
+#section2 {background: url('../images/bg2.jpg') center; background-size: cover;}
+#section3 {background: url('../images/bg3.jpg') center; background-size: cover;}
+#section4 {background: url('../images/bg4.jpg') center; background-size: cover;}
+
+
+section article {width: 1110px; height: 500px; position: absolute; left: 50%; top:50%; transform: translate(-50%,-50%);}
+
+#section1 h2 {width: 350px; height: 420px; font-size: 386px; color: #fff; float: left;}
+
+#section1 .box {width: 1110px;}
+#section1 div.text {width: 440px; height: 420px; float: left; }
+#section1 div strong {width: 440px; height: 180px; color: #c4c4c4; font-weight: bold; border-bottom: 1px solid #fff; display: block; font-size: 72px; margin-top: 45px; margin-bottom: 28px;}
+#section1 div em {font-size: 72px; color: #dfbda5; font-style: normal; font-weight: bold;}
+#section1 div p {font-size: 24px; color: #94b970; line-height: 30px; margin-top: 5px;}
+
+#section1 figure {width: 400px; height: 420px; float: left;  margin-top: 30px; margin-left: -80px;}
+#section1 figure img {transform: rotateY(180deg);}
+
+
+#section1 article {width: 350px; height: 450px; transition: 1s; overflow: hidden;}
+#section1 article:hover {width: 1110px;}
+
+
+
+#section2 article {width: 405px; height: 550px; transition: 1s; overflow: hidden;}
+#section2 article:hover {width: 860px;}
+
+#section2 .box {width: 900px; height: 550px; }
+
+#section2 figure {width: 405px; height: 541px; float: left; }
+#section2 .text {width: 400px; height: 540px; float: left; margin-left: 50px;}
+
+#section2 .text strong {width: 350px; height: 200px; font-size: 72px; color: #c06a00; word-break: keep-all; display: block; margin-top: 130px;}
+#section2 .text em {width: 400px; height: 170px; font-size: 48px; color: #c5c590; display: block; word-break: keep-all;}
+
+
+#section3 article {width: 330px; height: 330px; font-size: 72px; color: #fff; text-align: center; position: relative; }
+#section3 article .text {transition: .2s;}
+#section3 article:hover .text {transform: skewY(-15deg);}
+
+#section3 article a {position: absolute; width: 70px; height: 20px; font-size: 16px; background: #a54701; color: #fff; right: 10px; bottom:50px;}
+
+#section3 .gallery {position: absolute; width: 1600px; left: 50%; transform: translateX(-50%); text-align: center; top:200px; display: none;}
+
+#section3 .gallery li {width: 258px; height: 258px; background: #fff; margin: 25px 20px; display: inline-block; transition: .3s; position: relative; top:0; border-radius: 0 0 50px 0;}
+#section3 .gallery li:hover {top:-50px}
+
+#section3 .btn_close {position: absolute; width: 100px; height: 100px; right: 50px; top:100px; background: none; display: none;}
+#section3 .btn_close:before,
+#section3 .btn_close:after {content:""; width: 80px; height: 2px; background: #fff; position: absolute; left: 50%; transform: translateX(-50%);}
+
+#section3 .btn_close:before {transform:translateX(-50%) rotate(45deg);}
+#section3 .btn_close:after {transform:translateX(-50%) rotate(-45deg);}
+
+
+#section4 iframe {width: 100%; height: 100%; background: #f0f0f0; }
